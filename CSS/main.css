@@ -1,0 +1,276 @@
+* {
+    box-sizing: border-box;
+
+}
+
+header nav ul {
+    display: block;
+    background-color: #3c3b3a;
+    list-style: none;
+}
+
+header nav ul li a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+header nav ul li a:hover,
+header nav ul li a:active {
+    opacity: 1.0;
+}
+
+/*headings*/
+
+.heading {
+    font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+}
+
+.sub-heading {
+    font-size: 1.1rem;
+    font-weight: bold;
+    line-height: 1.2rem;
+}
+
+.para {
+    font-size: 1rem;
+    line-height: 1.1rem;
+}
+
+.banner {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    color: #3c3b3a;
+    /*    color: #f2f2f2;*/
+    background-size: cover;
+}
+
+#imgBoxes {
+    display: flex;
+    /*    flex-wrap: wrap;*/
+}
+
+.imgBox {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 5px;
+    width: 40%;
+}
+
+.sideImg {
+    width: 70%;
+}
+
+.imgBox img {
+    width: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+.imgBox span {
+    text-align: center;
+    color: #26a682;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    color: #f2f2f2;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #26a682;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.green {
+    color: #26a682;
+    line-height: 1.5rem;
+    letter-spacing: 0.5rem;
+}
+
+.black {
+    color: white;
+    background-color: #3c3b3a;
+}
+
+
+.section img,
+.section p {
+    width: 100%;
+}
+
+.black img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 80%;
+    border: 4px solid #f2f2f2;
+}
+
+#social {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+#top {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    display: block;
+    width: 300px;
+}
+
+#social li {
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+}
+
+footer {
+    display: flex;
+    color: #f2f2f2;
+    background-color: #3c3b3a;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bgText {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-image: url("../images/about.jpg");
+
+}
+
+.bgText1 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-image: url("../images/services.jpg");
+    background-position: center;
+    background-size: cover;
+    color: black;
+}
+
+.3section {
+    display: block;
+    /*    flex-direction: column;*/
+}
+
+.1of3 {
+    text-align: left;
+    font-size: 1.3rem;
+    padding: 20px;
+}
+
+.grey {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+form {
+    border: 4px solid #26a682;
+    width: 300px;
+    padding: 10px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (min-width: 40rem) {
+
+
+
+    header nav ul {
+        display: flex;
+
+    }
+    header nav ul li:first-child {
+        display: flex;
+        flex-grow: 2;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    header nav ul li:first-child a {
+        text-align: left;
+    }
+
+    header .banner {
+        display: flex;
+        flex-direction: row;
+    }
+    header .banner .sideImg {
+        /*        flex-shrink: 2;*/
+        width: 30%;
+    }
+    .section {
+        display: flex;
+        flex-direction: row;
+
+    }
+    .section img,
+    .section p {
+        width: 50%;
+        padding: 20px;
+    }
+    .section:first-child {
+        flex-direction: row-reverse;
+    }
+    .black img {
+        height: 200px;
+        width: 200px;
+    }
+    footer #social {
+        width: 30%;
+    }
+    .section3 {
+        display: inline-block;
+        flex-direction: row;
+    }
+
+    .section1of3 {
+        display: inline-block;
+        width: 30%;
+        text-align: center;
+        font-size: 1.3rem;
+        padding: 20px;
+    }
+
+    .grey {
+        flex-direction: row-reverse;
+    }
+}
